@@ -2,14 +2,10 @@
 import axios from "axios"
 import { useRouter } from "next/router"
 import React, { useContext } from "react"
-// export default function Auth() {
-//   return <div className="background">auth</div>;
-// }
 import { Context } from "../context"
 
 const Auth = () => {
   const { username, setUsername, secret, setSecret } = useContext(Context)
-
   const router = useRouter()
 
   function onSubmit(e) {

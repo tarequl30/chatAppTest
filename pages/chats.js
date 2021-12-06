@@ -1,8 +1,6 @@
 import dynamic from "next/dynamic"
 import { useRouter } from "next/router"
 import React, { useContext, useEffect, useState } from "react"
-// export default function Chats() {
-//   return <div className="background">chats</div>;
 import { Context } from "../context"
 
 const ChatEngine = dynamic(() =>
