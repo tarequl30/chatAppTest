@@ -7,7 +7,7 @@ import { Context } from "../context"
 const Auth = () => {
   const { username, setUsername, secret, setSecret } = useContext(Context)
   const router = useRouter()
-
+  console.log(useContext)
   function onSubmit(e) {
     e.preventDefault()
 
@@ -24,7 +24,7 @@ const Auth = () => {
         router.push("/chats")
       })
   }
-
+  console.log(username)
   return (
     <div className="background">
       <div className="auth-container">
